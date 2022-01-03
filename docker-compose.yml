@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  webrtc:
+    image: webrtc
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - .:/usr/src/webrtc
+    tty: true
